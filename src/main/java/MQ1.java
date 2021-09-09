@@ -24,7 +24,7 @@ public class MQ1 {
 
         channel.queueDeclare("MQ10",false,false,false,null);
         channel.basicPublish("","MQ10",null,userString.getBytes());
-        System.out.println("消息已发送22222");
+        System.out.println("消息已发送2");
         channel.close();
 
     }
